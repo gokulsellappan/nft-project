@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import axios from "axios";
 import Mainviewer from "./components/MainViewer/Mainviewer";
 import ApeList from "./components/ApeList/ApeList";
+
 const App = () => {
   const [collections, setCollections] = useState([]);
   const [selectedApe, setSelectedApe] = useState(0);
@@ -11,7 +12,7 @@ const App = () => {
   useEffect(() => {
     const getMyNft = async () => {
       const openSeaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x6AE79fDE227e305fB1449349de6DC557a9dD513A"
+        "/assets?asset_contract_address=0x6AE79fDE227e305fB1449349de6DC557a9dD513A"
       );
       setCollections(openSeaData.data.assets);
     };
