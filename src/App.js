@@ -15,7 +15,7 @@ const App = () => {
     headers: {
       header1: "http://localhost:3001/",
       header2: "http://localhost:3000/",
-      header3: "https://rapid-mouse-5489.on.fleek.co//",
+      header3: "https://rapid-mouse-5489.on.fleek.co/",
     },
   };
 
