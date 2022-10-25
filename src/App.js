@@ -11,11 +11,11 @@ const App = () => {
   const [collections, setCollections] = useState([]);
   const [selectedApe, setSelectedApe] = useState(0);
 
-  const config = {
+  let config = {
     headers: {
-      header1: "http://localhost:3001/",
-      header2: "http://localhost:3000/",
-      header3: "https://rapid-mouse-5489.on.fleek.co/",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Credentials": "true",
     },
   };
 
