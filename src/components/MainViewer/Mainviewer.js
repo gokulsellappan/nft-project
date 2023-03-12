@@ -30,7 +30,7 @@ const Mainviewer = ({ selectedApe, collections }) => {
           </div>
           <div className="owner">
             <div className="ownerImageContainer">
-              <img src={activeApe.owner.profile_img_url} />
+              <img src={activeApe.image_thumbnail_url} />
             </div>
             <div className="ownerDetails">
               <div className="ownerNameAndHandle">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import topLogo from "../../assets/header/topLogo.avif";
+import topLogo from "../../assets/header/topLogo.jpg";
 import searchIcon from "../../assets/header/search.png";
 import themeSwitchIcon from "../../assets/header/theme-switch.png";
 
