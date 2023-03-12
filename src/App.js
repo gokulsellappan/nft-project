@@ -28,7 +28,6 @@ const App = () => {
 
     getMyNft();
   }, []);
-  console.log(collections);
   return (
     <div className="app">
       <Header />
