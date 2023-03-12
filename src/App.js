@@ -18,7 +18,8 @@ const App = () => {
   useEffect(() => {
     const getMyNft = async () => {
       const openSeaData = await axios.get(
-        "https://testnets-api.opensea.io/assets?asset_contract_address=0x6AE79fDE227e305fB1449349de6DC557a9dD513A"
+        "https://testnets-api.opensea.io/assets?asset_contract_address=0x6AE79fDE227e305fB1449349de6DC557a9dD513A",
+        { "Access-Control-Allow-Origin": "*" }
       );
       setCollections(openSeaData.data.assets);
     };
